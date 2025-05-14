@@ -1,31 +1,31 @@
 # Laravel API Project
 
-Простой API для управления задачами с аутентификацией.
+API for task management with authentication.
 
-## Возможности
+## Features
 
-- Регистрация, вход и выход пользователей
-- Управление задачами (CRUD)
+- User registration, login, and logout
+- Task management (CRUD)
 
-## Эндпоинты
+## Endpoints
 
-### Аутентификация
-- `POST api/register` - регистрация
-- `POST api/login` - вход
-- `POST api/logout` - выход (требует аутентификации)
-- `POST api/logout-all` - выход со всех устройств (требует аутентификации)
+### Authentication
+- `POST api/register` - register
+- `POST api/login` - login
+- `POST api/logout` - logout (requires authentication)
+- `POST api/logout-all` - logout from all devices (requires authentication)
 
-### Задачи (v1, требуют аутентификации)
-- `GET api/v1/tasks` - список задач
-- `POST api/v1/tasks` - создать задачу
-- `GET api/v1/tasks/{id}` - получить задачу
-- `PUT/PATCH api/v1/tasks/{id}` - обновить задачу
-- `DELETE api/v1/tasks/{id}` - удалить задачу
+### Tasks (v1, requires authentication)
+- `GET api/v1/tasks` - list tasks
+- `POST api/v1/tasks` - create task
+- `GET api/v1/tasks/{id}` - get task
+- `PUT/PATCH api/v1/tasks/{id}` - update task
+- `DELETE api/v1/tasks/{id}` - delete task
 
-## Установка
+## Installation
 
-1. Клонировать репозиторий
+1. Clone the repository
 2. `composer install`
-3. Настроить `.env` файл
+3. Configure `.env` file
 4. `php artisan migrate`
 5. `php artisan serve`
